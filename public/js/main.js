@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var gUrl = "http://192.168.1.69:5000";
+    var gUrl = "http://192.168.0.103:5000";
 
     // select first box
     $(".code-box").first().focus();
