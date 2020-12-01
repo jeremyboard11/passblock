@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guess</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="main-div-outter">
+        <div class="main-div-inner">
+            <!-- <div class="header">Guess</div> -->
+
+            <div class="tries-count" id="tries-count"></div>
+
+            <div class="code-div" id="code-div">
+                <input maxlength="1" autocapitalize="none" class="code-box" />
+                <input maxlength="1" autocapitalize="none" class="code-box" />
+                <input maxlength="1" autocapitalize="none" class="code-box" />
+                <input maxlength="1" autocapitalize="none" class="code-box" />
+            </div>
+
+            <div class="go-btn-div">
+                <button class="go-btn" id="go">Go</button>
+                <div class="message" id="message">Checking code...</div>
+                <div class="message-res-win" id="message-res-win"></div>
+                <div class="message-res" id="message-res-lose"></div>
+                <div class="message-res" id="win-cardnum">Your Amazon Gift Card Code is: <b id="win-code"></b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
