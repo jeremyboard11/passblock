@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var gUrl = "http://192.168.0.103:5000";
+    var gUrl = "http://https://codecrack.herokuapp.com";
 
     // select first box
     $(".code-box").first().focus();
