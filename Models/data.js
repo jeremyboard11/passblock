@@ -7,4 +7,4 @@ var DataSchema = new Schema({
 
 const DataModel = Mongoose.model('datas', DataSchema);
 
-module.exports = DataModel;
+module.exports = DataModel
