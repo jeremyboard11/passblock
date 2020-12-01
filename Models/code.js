@@ -9,4 +9,4 @@ var CodeSchema = new Schema({
 
 var CodeModel = Mongoose.model('codes', CodeSchema);
 
-module.exports = CodeModel;
+module.exports = CodeModel
