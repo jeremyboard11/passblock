@@ -19,10 +19,10 @@ function addTry(){
 }
 
 Router.post('/generate', (req,res) => {
-    if(req.query.code && req.query.code.length >= 4){
+    if(req.query.code && req.query.code.length >= 3){
         res.send(Bcrypt.hashSync(req.query.code,10));
     }else{
-        res.send("Code has to be at least 4 characters");
+        res.send("Code has to be at least 3 characters");
     }
 });
 
@@ -56,7 +56,7 @@ Router.get('/guess', async (req,res) => {
             {
                 res.json({win:true, message: "You won!", giftcard: giftcardcode});
             }else{
-                res.json({win:false, message: "Dang, you lost"});
+                res.json({win:false, message: "lol you lost"});
                 addTry();
             }
 
